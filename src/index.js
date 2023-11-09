@@ -1,11 +1,15 @@
 // src/index.js
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from "react-dom/client"
+import { BrowserRouter } from "react-router-dom"
 import HomePage from './pages/HomePage';
 
-ReactDOM.render(
-    <React.StrictMode>
+const container = document.getElementById("root")
+const root = createRoot(container)
+root.render(
+    <BrowserRouter>
         <HomePage />
-    </React.StrictMode>,
-    document.getElementById('root')
-);
+    </BrowserRouter>
+)
+
+
+ 
