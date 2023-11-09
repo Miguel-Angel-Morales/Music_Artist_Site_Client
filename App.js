@@ -1,7 +1,7 @@
 // App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from './src/NavBar';
 import Music from './Music';
 import Merch from './Merch';
 import Tour from './Tour';
